@@ -18,13 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'your-email@gmail.com'; // Ваш Gmail
+        $mail->Username = 'dima7dimka@gmail.com'; // Ваш Gmail
         $mail->Password = 'your-app-password';    // Пароль приложения
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('your-email@gmail.com', 'Steko Landing');
-        $mail->addAddress('info@steko.ru'); // Ваш email для заявок
+        $mail->setFrom('dima7dimka@gmail.com', 'Steko Landing');
+        $mail->addAddress('dima7dimka@gmail.com'); // Получатель
 
         $mail->isHTML(true);
         $mail->Subject = 'Заявка на изготовление от Steko';

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(result => {
             if (result.status === 'success') {
-                formMessage.textContent = 'Заявка отправлена! Мы свяжемся с вами скоро.';
+                formMessage.textContent = 'Заявка отправлена!';
                 formMessage.classList.remove('error');
                 formMessage.classList.add('success');
                 contactForm.reset();

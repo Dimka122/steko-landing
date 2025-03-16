@@ -1,4 +1,20 @@
 <?php
+
+// Включаем отображение ошибок
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+header('Content-Type: application/json');
+
+// Проверяем наличие autoload.php
+if (!file_exists('vendor/autoload.php')) {
+    echo json_encode(['status' => 'error', 'message' => 'vendor/autoload.php не найден']);
+    exit;
+}
+
+require 'vendor/autoload.php';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -19,11 +35,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'dima7dimka@gmail.com'; // Ваш Gmail
-        $mail->Password = 'your-app-password';    // Пароль приложения
+        $mail->Password = 'sygzkkcognyehlef';    // Пароль приложения
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom('dima7dimka@gmail.com', 'Steko Landing');
+        $mail->setFrom('dima7dimka@gmail.com', 'steko-landing');
         $mail->addAddress('dima7dimka@gmail.com'); // Получатель
 
         $mail->isHTML(true);

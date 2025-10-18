@@ -1,20 +1,5 @@
 <?php
 
-// Включаем отображение ошибок
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-header('Content-Type: application/json');
-
-// Проверяем наличие autoload.php
-if (!file_exists('vendor/autoload.php')) {
-    echo json_encode(['status' => 'error', 'message' => 'vendor/autoload.php не найден']);
-    exit;
-}
-
-require 'vendor/autoload.php';
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 

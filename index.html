@@ -3,52 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steko - Закажите окна и двери</title>
+    <title>Steko - Окна и двери с 18-летним опытом</title>
+    <meta name="description" content="Качественные пластиковые окна, балконы и двери от производителя. Гарантия 5 лет, бесплатный замер, монтаж по Киеву и области.">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="black">St</span><span class="green">eko</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#portfolio">Работы</a></li>
+                <li><a href="#steps">Этапы</a></li>
+                <li><a href="#contact" class="nav-cta">Заказать звонок</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Прогресс-бар -->
+    <div class="progress-bar" id="progressBar"></div>
+
     <!-- Герой-секция -->
-    <section class="hero">
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
         <div class="container">
-            <h1>Окна и двери от <span class="steko"><span class="black">St</span><span class="green">eko</span></span></h1>
-            <p>Качественные решения для вашего дома с 18-летним опытом</p>
-            <a href="#contact" class="cta-button">Оставить заявку</a>
+            <div class="hero-content">
+                <h1>Профессиональное изготовление <span class="steko"><span class="black">окон</span><span class="green"> и дверей</span></span></h1>
+                <p class="hero-subtitle">С 18-летним опытом работы мы создаём комфорт в вашем доме</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Бесплатный замер</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Гарантия 5 лет</span>
+                    </div>
+                    <div class="hero-feature">
+                        <span class="feature-icon">✓</span>
+                        <span>Монтаж за 1 день</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">Получить бесплатный расчёт</a>
+                    <a href="#portfolio" class="cta-button secondary">Смотреть работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Наши <span class="steko"><span class="black">ус</span><span class="green">луги</span></span></h2>
+            <p class="section-subtitle">Полный спектр услуг по изготовлению и установке</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🪟</div>
+                    <h3>Пластиковые окна</h3>
+                    <p>Энергосберегающие стеклопакеты с микропроветриванием. Профиль REHAU, KBE, OpenTeck.</p>
+                    <span class="service-price">от 2500 грн/м²</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚪</div>
+                    <h3>Входные двери</h3>
+                    <p>Металлические двери с утеплением и звукоизоляцией. Более 50 цветов и фактур.</p>
+                    <span class="service-price">от 4500 грн</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Балконы под ключ</h3>
+                    <p>Тёплое остекление, утепление, отделка и мебель на балконе.</p>
+                    <span class="service-price">от 15000 грн</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔲</div>
+                    <h3>Межкомнатные двери</h3>
+                    <p>Шпонированные, ламинированные и массив двери. Фурнитура Hettich.</p>
+                    <span class="service-price">от 2800 грн</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Москитные сетки</h3>
+                    <p>Защита от насекомых. Рамочные, рулонные и плиссе сетки.</p>
+                    <span class="service-price">от 400 грн</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Ремонт и сервис</h3>
+                    <p>Регулировка, замена уплотнителя, фурнитуры и стеклопакетов.</p>
+                    <span class="service-price">от 300 грн</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Преимущества -->
-    <section class="benefits">
+    <section class="benefits" id="benefits">
         <div class="container">
-            <h2>Почему выбирают <span class="steko"><span class="black">St</span><span class="green">eko</span></span>?</h2>
+            <h2>Почему выбирают <span class="steko"><span class="black">St</span><span class="green">eko</span></span></h2>
+            <p class="section-subtitle">Наши преимущества, которые ценят клиенты</p>
             <div class="benefits-list">
                 <div class="benefit-item">
-                    <h3>Надежность</h3>
-                    <p>Прочные материалы и проверенные технологии.</p>
+                    <div class="benefit-number">18</div>
+                    <h3>Лет опыта</h3>
+                    <p>Более 5000 выполненных проектов по Киеву и области</p>
                 </div>
                 <div class="benefit-item">
-                    <h3>Энергоэффективность</h3>
-                    <p>Сохраняйте тепло и экономьте на отоплении.</p>
+                    <div class="benefit-number">5</div>
+                    <h3>Лет гарантии</h3>
+                    <p>Официальная гарантия на профиль, фурнитуру и монтаж</p>
                 </div>
                 <div class="benefit-item">
-                    <h3>Стильный дизайн</h3>
-                    <p>Современные решения для любого интерьера.</p>
+                    <div class="benefit-number">24</div>
+                    <h3>Часа</h3>
+                    <p>Среднее время изготовления стандартного окна</p>
                 </div>
                 <div class="benefit-item">
-                    <h3>Гарантия качества</h3>
-                    <p>Полный цикл.От замера до установки!</p>
+                    <div class="benefit-number">100%</div>
+                    <h3>Качество</h3>
+                    <p>Сертифицированные материалы и профессиональный монтаж</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Этапы работы -->
+    <section class="steps" id="steps">
+        <div class="container">
+            <h2>Как мы <span class="steko"><span class="black">ра</span><span class="green">ботаем</span></span></h2>
+            <p class="section-subtitle">Простой и понятный процесс от заявки до монтажа</p>
+            <div class="steps-list">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Заявка</h3>
+                        <p>Оставьте заявку на сайте или позвоните нам. Менеджер свяжется с вами в течение 15 минут.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Замер</h3>
+                        <p>Наш специалист приедет в удобное для вас время, произведёт точные замеры и рассчитает стоимость.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Изготовление</h3>
+                        <p>Производим окна и двери по вашим размерам. Срок изготовления 3-7 дней.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Монтаж</h3>
+                        <p>Профессиональная установка с соблюдением технологий. Чистая уборка после работ.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Галерея работ -->
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
-            <h2>Примеры наших работ</h2>
+            <h2>Примеры <span class="steko"><span class="black">на</span><span class="green">ших работ</span></span></h2>
+            <p class="section-subtitle">Реальные проекты, выполненные нашей командой</p>
             <div class="gallery">
-                <div class="gallery-item"><img src="./img/окна1.jpg" alt="Окно 1"></div>
-                <div class="gallery-item"><img src="./img/окно3.jpg" alt="Дверь 1"></div>
-                <div class="gallery-item"><img src="./img/окно2.jpg" alt="Окно 2"></div>
+                <div class="gallery-item">
+                    <img src="./img/окна1.jpg" alt="Пластиковое окно">
+                    <div class="gallery-overlay">
+                        <h4>Пластиковое окно</h4>
+                        <p>ЖК "Новопечерские Липки"</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/окно3.jpg" alt="Входная дверь">
+                    <div class="gallery-overlay">
+                        <h4>Входная дверь</h4>
+                        <p>Частный дом, Бровары</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./img/окно2.jpg" alt="Балкон">
+                    <div class="gallery-overlay">
+                        <h4>Балкон под ключ</h4>
+                        <p>ЖК "Сонячна брама"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <p>Хотите увидеть больше работ?</p>
+                <a href="#" class="cta-button secondary">Перейти в Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>Отзывы <span class="steko"><span class="black">кли</span><span class="green">ентов</span></span></h2>
+            <p class="section-subtitle">Что говорят наши клиенты</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Заказывали остекление балкона и замену окон в квартире. Всё сделали качественно и в срок. Мастера вежливые, всё убрали после себя. Рекомендую!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">А</div>
+                        <div class="author-info">
+                            <h4>Андрей Иванович</h4>
+                            <p>ЖК "Зелёный остров"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Очень доволен работой! Заказывали входную дверь в частный дом. Помогли с выбором, всё объяснили. Установили за один день. Качество на высоте!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">С</div>
+                        <div class="author-info">
+                            <h4>Сергей Петрович</h4>
+                            <p>г. Вишневое</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Второй раз обращаемся в Steko. Первый раз заказывали окна, теперь балкон под ключ. Все идеально! Цены адекватные, гарантия реальная."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">М</div>
+                        <div class="author-info">
+                            <h4>Марина Дмитриевна</h4>
+                            <p>ЖК "Лесной городок"</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -56,24 +260,85 @@
     <!-- Форма заявки -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2>Оставьте заявку на изготовление</h2>
-            <p>Мы свяжемся с вами в течение часа!</p>
-            <form id="contactForm" action="https://formspree.io/f/xrbyjkey" method="POST">
-                <input type="text" name="name" placeholder="Ваше имя" required>
-                <input type="tel" name="phone" placeholder="Ваш телефон" required>
-                <textarea name="message" placeholder="Какие окна или двери вам нужны?" rows="4"></textarea>
-                <button type="submit">Отправить заявку</button>
-                <p class="form-message"></p>
-            </form>
+            <h2>Оставьте <span class="steko"><span class="black">за</span><span class="green">явку</span></span></h2>
+            <p class="section-subtitle">Мы свяжемся с вами в течение 15 минут</p>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Телефон</h4>
+                            <a href="tel:+380665465677">+38 (066) 546-56-77</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:info@steko.com.ua">info@steko.com.ua</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Адрес</h4>
+                            <p>г. Киев, ул. Примерная, 15</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <h4>Время работы</h4>
+                            <p>Пн-Сб: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/xrbyjkey" method="POST">
+                    <input type="text" name="name" placeholder="Ваше имя" required>
+                    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                    <select name="service">
+                        <option value="">Выберите услугу</option>
+                        <option value="windows">Пластиковые окна</option>
+                        <option value="doors">Входные двери</option>
+                        <option value="balcony">Балкон под ключ</option>
+                        <option value="interior-doors">Межкомнатные двери</option>
+                        <option value="mosquito">Москитные сетки</option>
+                        <option value="repair">Ремонт и сервис</option>
+                    </select>
+                    <textarea name="message" placeholder="Комментарий (размеры, пожелания)" rows="4"></textarea>
+                    <button type="submit" class="cta-button primary">Отправить заявку</button>
+                    <p class="form-message"></p>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- Подвал -->
     <footer>
         <div class="container">
-            <p>© 2025 Steko. Все права защищены.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="black">St</span><span class="green">eko</span>
+                    <p>Окна и двери с 2007 года</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Услуги</a>
+                    <a href="#benefits">Преимущества</a>
+                    <a href="#portfolio">Работы</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Telegram">✈️</a>
+                </div>
+            </div>
+            <p class="footer-copyright">© 2025 Steko. Все права защищены.</p>
         </div>
     </footer>
+
+    <!-- Кнопка наверх -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
 
     <script src="script.js"></script>
 </body>
